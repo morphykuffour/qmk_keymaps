@@ -1,9 +1,6 @@
 # MCU name
 MCU = atmega32u4
 
-# Bootloader selection
-# BOOTLOADER = caterina
-
 # Enable the Elite-C board
 BOOTLOADER = atmel-dfu
 

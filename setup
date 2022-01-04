@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+
+# Gets the full path to this keymaps repo's directory
+REPO_DIR="$(realpath "$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )")"
+
+function symlink_dactyl_custom_keymap() {
+  local source_keymap="$REPO_DIR/dactyl_manuform_keymaps"
+  local symlink_destination="$QMK_HOME/keyboards/handwired/dactyl_manuform/6x6/keymaps/custom"
+
+  if [ ! -d "$symlink_destination" ]; then
+    echo "Symlinking keymap"
+    ln -sf "$source_keymap" "$symlink_destination"
+  else
+    echo "Keymap already in place, nothing to do"
+  fi
+}
+
+symlink_dactyl_custom_keymap
