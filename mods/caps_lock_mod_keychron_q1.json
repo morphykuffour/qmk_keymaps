@@ -280,7 +280,7 @@
       "KC_DOWN",
       "KC_RSFT",
       "KC_DEL",
-      "KC_LCTL",
+      "MT(MOD_LCTL | MOD_LALT,KC_ESC)",
       "KC_LGUI",
       "KC_RALT",
       "KC_NO",
