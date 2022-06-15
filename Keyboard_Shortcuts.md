@@ -62,3 +62,8 @@ NOTE: To cancel insertion point, press the last inerstion key combination.
 | Toggle gaps   | <kbd>lctrl</kbd> + <kbd>alt</kbd> + <kbd>g</kbd>                    |
 | Restart yabai | <kbd>lctrl</kbd> + <kbd>shift</kbd> + <kbd>alt</kbd> + <kbd>r</kbd> |
 
+### Tmux Key bindings
+
+#### Tmux Resurrect
+- `Ctrl-a + Ctrl-s` - save
+- `Ctrl-a + Ctrl-r` - restore
