@@ -1,0 +1,18 @@
+make ferris/0_2:manna-harbour_miryoku:flash # ferris/0_2
+make ferris/sweep:manna-harbour_miryoku:flash # ferris/sweep
+
+qmk compile -c -kb ferris/sweep -km manna-harbour_miryoku
+qmk compile -c -kb ferris/sweep -km manna-harbour_miryoku  -e CONVERT_TO=promicro_rp2040 
+qmk compile -c -kb ferris/sweep -km manna-harbour_miryoku  -e CONVERT_TO=rp2040_ce
+
+
+qmk home row mods fix
+
+#undef QUICK_TAP_TERM
+#undef TAPPING_TERM
+#define TAPPING_TERM 250
+#define QUICK_TAP_TERM 120
+#define PERMISSIVE_HOLD
+#define IGNORE_MOD_TAP_INTERRUPT
+
+qmk compile -c -kb ferris/sweep -km colemak-dh -e CONVERT_TO=rp2040_ce
