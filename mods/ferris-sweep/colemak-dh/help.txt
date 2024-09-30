@@ -16,3 +16,5 @@ qmk home row mods fix
 #define IGNORE_MOD_TAP_INTERRUPT
 
 qmk compile -c -kb ferris/sweep -km colemak-dh -e CONVERT_TO=rp2040_ce
+
+qmk compile -c -kb ferris/sweep -km vial -e CONVERT_TO=rp2040_ce
